@@ -1,50 +1,5 @@
 "Resource/HudLayout.res" 
 {
-	xHairCirclePulse
-	{
-		"controlName"	"CExLabel"
-		"fieldName"	 	"xHairCirclePulse"
-		"visible"		"0"		//Disabled by default. Change this value to 1 to enable the damage circle.
-		"enabled"		"0"
-		"zpos"			"-5"
-
-		"xpos"			"c-100"
-		"ypos"			"c-100"
-		"wide"			"203"
-		"tall"			"203"
-
-		"font"			"xHairCirclePulse"
-		"labelText"		"i"
-		"textAlignment"	"center"	
-		
-		"fgcolor"		"255 255 255 255" //Change to this for white circle: "255 255 255 255"
-	}
-	"Crosshair"
-	{
-        "controlname"	"CExLabel"
-		"fieldname"	"CrosshairAA"
-        "textAlignment"	"center"
-		"xpos"		"0"
-		"ypos"		"0"
-		"zpos"		"-2"
-		"wide"		"f0"
-		"tall"		"480"
-        "enabled"	"0"
-        
-        "visible"	"0"			     //"1" to enable
-        
-		"labeltext"	"t"              //Change this to use a different crosshair
-                                     //You can see the list of crosshairs in Crosshairs.png
-        
-        "font"		"CrosshairAA"    //Use "CrosshairOL" for a crosshair with an outline
-                                     //or "CrosshairAA" for a smooth crosshair w/o an outline 
-                                     
-                                     //You can add "Small" or "Big" at the end to change the size
-                                     //e.g. "CrosshairOLSmall"
-        
-        "fgcolor"	"ya_Crosshair"      //Color is changed via the clientscheme
-                                     //in the "/resource/" folder
-	}
 
 	"HudMenuTauntSelection"
 	{
@@ -64,8 +19,8 @@
 	{
 		"controlName" "CExLabel"
 		"fieldName" "xHairSpread"
-		"visible" "1"		//Disabled by default. Change this value to 1 to enable the crosshair.
-		"enabled" "1"
+		"visible" "0"		//Disabled by default. Change this value to 1 to enable the crosshair.
+		"enabled" "0"
 		"zpos" "2"
 		
 		"xpos" "c-102"		//If your crosshair is not centred, play with "xpos" and "ypos".
@@ -84,8 +39,8 @@
 	{
 		"controlName" "CExLabel"
 		"fieldName" "xHairSpread"
-		"visible" "1"		//Disabled by default. Change this value to 1 to enable the crosshair.
-		"enabled" "1"
+		"visible" "0"		//Disabled by default. Change this value to 1 to enable the crosshair.
+		"enabled" "0"
 		"zpos" "2"
 		
 		"xpos" "c-102"		//If your crosshair is not centred, play with "xpos" and "ypos".
@@ -99,47 +54,7 @@
 		
 		"fgcolor" "255 255 255 192"
 	}
-
-
-		xHairSpreadDark
-	{
-		"controlName" "CExLabel"
-		"fieldName" "xHairSpread"
-		"visible" "0"		//Disabled by default. Change this value to 1 to enable the crosshair.
-		"enabled" "0"
-		"zpos" "2"
-		
-		"xpos" "c-105"		//If your crosshair is not centred, play with "xpos" and "ypos".
-		"ypos" "c-104"		//The c-100 means that it is 100 to the left of center. You shouldn't need adjustments of more than 10, so be a little stingy with your tweaks!
-		"wide" "198"		//Larger is to the right
-		"tall" "206"		//Larger is down
-		
-		"font" "xHairSpread25"
-		"labelText" "3"			//Change this to the number/letter of the desired crosshair found in the customization/crosshairs image file.
-		"textAlignment" "center"
-		
-		"fgcolor" "0 0 0 255"
-	}
-
-	xHairSpreadDark2
-	{
-		"controlName" "CExLabel"
-		"fieldName" "xHairSpread"
-		"visible" "0"		//Disabled by default. Change this value to 1 to enable the crosshair.
-		"enabled" "0"
-		"zpos" "2"
-		
-		"xpos" "c-98"		//If your crosshair is not centred, play with "xpos" and "ypos".
-		"ypos" "c-106"		//The c-100 means that it is 100 to the left of center. You shouldn't need adjustments of more than 10, so be a little stingy with your tweaks!
-		"wide" "197"
-		"tall" "213"
-		
-		"font" "xHairSpread"
-		"labelText" "3"			//Change this to the number/letter of the desired crosshair found in the customization/crosshairs image file.
-		"textAlignment" "center"
-		
-		"fgcolor" "0 0 0 255"
-	}	
+	
 	HudPlayerStatus
 	{
 		"fieldName" 	"HudPlayerStatus"
