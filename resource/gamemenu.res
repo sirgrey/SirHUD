@@ -24,7 +24,7 @@
 	{
 		"label" "PLAY MVM" 
 		"command" "playpve"
-		"subimage" "glyph_coop"
+		"subimage" ""
 		"OnlyAtMenu" "1"
 	}
 	"ServerBrowserButton"

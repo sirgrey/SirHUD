@@ -16,7 +16,7 @@
 		"settitlebarvisible"	"0"
 		"PaintBackgroundType"	"0"
 		"paintbackground"		"1"
-		"bgcolor_override"	"BasBlack"
+		"bgcolor_override"	"HudBlack"
 	}
 	
 	"TitleLabel"
