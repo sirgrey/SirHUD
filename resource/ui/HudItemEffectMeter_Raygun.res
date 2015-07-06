@@ -12,6 +12,7 @@
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 	}
+	
 	"ItemEffectMeterBG"
 	{
 		"ControlName"	"CTFImagePanel"

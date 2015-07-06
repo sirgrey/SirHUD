@@ -5,7 +5,7 @@
 		"fieldName"				"CDamageAccountPanel"
 		"text_x"				"0"
 		"text_y"				"0"
-		"delta_item_start_y"	"-5"
+		"delta_item_start_y"	"0"
 		"delta_item_end_y"		"0"
 		"PositiveColor"			"30 180 0 120"
 		"NegativeColor"			"255 255 255 120"

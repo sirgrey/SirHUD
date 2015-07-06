@@ -1,13 +1,14 @@
 "Resource/UI/HudItemEffectMeter_ParticleCannon.res"
 {
+
 	HudItemEffectMeter
 	{
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"c-87"
-		"ypos"			"r154"
-		"wide"			"175"
+		"xpos"			"c-86"	[$WIN32]
+		"ypos"			"r168"	[$WIN32]
+		"wide"			"200"
 		"tall"			"50"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
