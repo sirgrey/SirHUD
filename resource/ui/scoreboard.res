@@ -13,10 +13,10 @@
 		"visible"			"1"
 		"enabled"			"1"
 		"tabPosition"		"0"
-		"medalwidth"		"14"
-		"avatar_width"		"54"	
-		"name_width"		"71"
-		"name_width_minmode""71" 
+		"medal_width"		"14"
+		"avatar_width"		"50"	
+		"name_width"		"80"
+		"name_width_minmode""60"
 		"status_width"		"15"	
 		"nemesis_width"		"15"	
 		"class_width"		"15"	
@@ -25,6 +25,7 @@
 		"stats_width"		"30"
 		"killstreak_width"	"20"
 	}
+	
 	"BlueScoreBG"
 	{
 		"ControlName"		"ImagePanel"
