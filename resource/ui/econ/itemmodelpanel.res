@@ -1,5 +1,21 @@
 "Resource/UI/ItemModelPanel.res"
 {
+
+	"mouseoveritempanel"
+	{
+		"fieldName"				"mouseoveritempanel"
+		"collection_wide"		"500"
+		"collection_list_xpos"	"250"
+		"is_mouseover"			"1"
+		"text_xpos_collection"	"0"
+		"text_ypos"			"15"
+		"text_forcesize" "0"
+		//"model_xpos_collection"	"77"
+		//"model_ypos_collection"	"20"
+		//"model_wide_collection"	"156"
+		//"model_tall_collection"	"100"
+	}
+
 	"LoadingSpinner"
 	{
 		"ControlName"	"ImagePanel"
@@ -17,7 +33,8 @@
 		"image"			"animated/tf2_logo_hourglass"
 		"scaleImage"	"1"
 	}
-
+	
+	
 	"MainContentsContainer"
 	{
 		"ControlName"	"EditablePanel"
@@ -28,12 +45,12 @@
 		"tall"			"f0"
 		"visible"		"1"
 		"bgcolor_override"		"0 0 0 0"
-
+	
 		"itemmodelpanel"
 		{
 			"ControlName"		"CEmbeddedItemModelPanel"
 			"fieldName"		"itemmodelpanel"
-	
+		
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"1"		
@@ -44,7 +61,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"useparentbg"		"1"
-		
+			
 			"inset_eq_x"	"2"
 			"inset_eq_y"	"2"
 
@@ -60,7 +77,7 @@
 				"angles_z"		"0"
 			}
 		}
-	
+		
 		"namelabel"
 		{
 			"ControlName"	"CExLabel"
@@ -99,16 +116,16 @@
 			"fgcolor"		"117 107 94 255"
 			"centerwrap"	"1"
 		}
-	
+		
 		"equippedlabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"equippedlabel"
-			"font"			"abeat8"
+			"font"			"ItemFontAttribSmall"
 			"xpos"			"37"
 			"ypos"			"28"
 			"zpos"			"2"
-			"wide"			"37"
+			"wide"			"35"
 			"tall"			"10"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -117,12 +134,12 @@
 			"labelText"		"#ItemPanelEquipped"
 			"textAlignment"	"center"
 			"fgcolor"		"200 80 60 255"
-			"bgcolor_override"		"dipDarkBG"
+			"bgcolor_override"		"0 0 0 255"
 			"PaintBackgroundType"	"2"
-			"paintborder"	"1"
-			"border"	"FuckinBorderDude"
+			"PaintBackgroundType"	"0"
+			"border"		"NoBorder"
 		}
-	
+		
 		"paint_icon"
 		{
 			"ControlName"	"CItemMaterialCustomizationIconPanel"
@@ -141,11 +158,11 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"quantitylabel"
-			"font"			"ItemFontAttribSmall"
+			"font"			"Cerbetica12"
 			"xpos"			"4"
 			"ypos"			"4"
 			"zpos"			"2"
-			"wide"			"10"
+			"wide"			"18"
 			"tall"			"10"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -153,22 +170,21 @@
 			"enabled"		"1"
 			"labelText"		""
 			"textAlignment"	"center"
-			"fgcolor"		"HudOffWhite"
-			"bgcolor_override"		"dipDarkBG"
-			"PaintBackgroundType"	"2"
-			"paintborder"	"1"
-			"border"		"FuckinBorderDude"
+			"fgcolor"		"200 80 60 255"
+			"bgcolor_override"		"0 0 0 255"
+			"PaintBackgroundType"	"0"
+			"border"		"NoBorder"
 		}
 
 		"serieslabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"serieslabel"
-			"font"			"ItemFontAttribSmall"
+			"font"			"Cerbetica12"
 			"xpos"			"4"
 			"ypos"			"4"
 			"zpos"			"2"
-			"wide"			"14"
+			"wide"			"18"
 			"tall"			"10"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -176,13 +192,12 @@
 			"enabled"		"1"
 			"labelText"		""
 			"textAlignment"	"center"
-			"fgcolor"		"HudOffWhite"
-			"bgcolor_override"		"dipDarkBG"
-			"PaintBackgroundType"	"2"
-			"paintborder"	"1"
-			"border"		"FuckinBorderDude"
+			"fgcolor"		"200 180 60 255"
+			"bgcolor_override"		"0 40 30 255"
+			"PaintBackgroundType"	"0"
+			"border"		"NoBorder"
 		}
-
+		
 		"matcheslabel"
 		{
 			"ControlName"	"CExLabel"
@@ -191,7 +206,7 @@
 			"xpos"			"4"
 			"ypos"			"4"
 			"zpos"			"2"
-			"wide"			"20"
+			"wide"			"24"
 			"tall"			"10"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -199,17 +214,33 @@
 			"enabled"		"1"
 			"labelText"		""
 			"textAlignment"	"center"
-			"fgcolor"		"HUDOffWhite"
-			"bgcolor_override"		"dipDarkBG"
+			"border"		"NoBorder"
+			"fgcolor"		"200 180 60 255"
+			"bgcolor_override"		"0 40 30 255"
 			"PaintBackgroundType"	"2"
-			"paintborder"	"1"
-			"border"		"FuckinBorderDude"
-		}
+			}
 
 		"vision_restriction_icon"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"vision_restriction_icon"
+			"xpos"			"4"
+			"ypos"			"4"
+			"zpos"			"2"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"wide"			"20"
+			"border"		"NoBorder"
+			"tall"			"16"
+			"visible"		"0"
+			"enabled"		"1"
+			"scaleImage"	"1"
+			}
+
+		"is_strange_icon"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"is_strange_icon"
 			"xpos"			"4"
 			"ypos"			"4"
 			"zpos"			"2"
@@ -221,7 +252,37 @@
 			"enabled"		"1"
 			"scaleImage"	"1"
 		}
-
+		"is_unusual_icon"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"is_unusual_icon"
+			"xpos"			"4"
+			"ypos"			"4"
+			"zpos"			"2"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"wide"			"16"
+			"tall"			"16"
+			"visible"		"0"
+			"enabled"		"1"
+			"scaleImage"	"1"
+		}
+		"is_loaner_icon"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"is_loaner_icon"
+			"xpos"			"4"
+			"ypos"			"4"
+			"zpos"			"2"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"wide"			"16"
+			"tall"			"16"
+			"visible"		"0"
+			"enabled"		"1"
+			"scaleImage"	"1"
+		}
+		
 		"contained_item_panel"
 		{
 			"ControlName"	"CItemModelPanel"
@@ -236,9 +297,9 @@
 			"PaintBackgroundType"	"2"
 			"paintborder"	"0"
 			"useparentbg"	"0"
-		
+			
 			"enabled"		"1"
-		
+			
 			"model_xpos"	"1"
 			"model_ypos"	"1"
 			"model_wide"	"16"
@@ -246,16 +307,16 @@
 			"text_ypos"		"60"
 			"text_center"	"1"
 			"model_only"	"1"
-		
+			
 			"inset_eq_x"	"2"
 			"inset_eq_y"	"2"
-		
+			
 			"itemmodelpanel"
 			{
 				"use_item_rendertarget" "0"
 				"allow_rot"				"0"
 			}
-		
+			
 			"use_item_sounds"	"1"
 		}
 	}

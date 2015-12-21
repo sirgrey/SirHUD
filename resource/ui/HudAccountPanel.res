@@ -40,7 +40,7 @@
 		"wide"			"18"
 		"tall"			"16"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"scaleImage"	"5"	
 		"icon"			"ico_metal"
 		"iconColor"		"HealthBgGrey"
@@ -50,7 +50,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"AccountValue"
-		"xpos"			"20"
+		"xpos"			"18"
 		"ypos"			"112"
 		"zpos"			"2"
 		"wide"			"55"
@@ -65,12 +65,13 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"font"			"HudFontMediumSmall"
+		"fgcolor_override"	"white"
 	}
 	"AccountValueShadow"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"AccountValueShadow"
-		"xpos"			"21"
+		"xpos"			"19"
 		"ypos"			"113"
 		"zpos"			"2"
 		"wide"			"55"

@@ -5,8 +5,8 @@
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"c-96"	[$WIN32]
-		"ypos"			"r178"	[$WIN32]
+		"xpos"			"c-97"	[$WIN32]
+		"ypos"			"r181"	[$WIN32]
 		"wide"			"200"
 		"tall"			"50"
 		"MeterFG"		"White"
@@ -30,7 +30,7 @@
 		"ypos"					"25"
 		"zpos"					"4"
 		"wide"					"1"
-		"tall"					"4"
+		"tall"					"1"
 		"autoResize"			"0"
 		"pinCorner"				"0"
 		"visible"				"1"		
@@ -43,11 +43,11 @@
 	{
 		"ControlName"			"ImagePanel"
 		"fieldName"				"meter_25"
-		"xpos"					"96"
+		"xpos"					"97"
 		"ypos"					"25"
 		"zpos"					"4"
 		"wide"					"1"
-		"tall"					"4"
+		"tall"					"1"
 		"autoResize"			"0"
 		"pinCorner"				"0"
 		"visible"				"1"		
@@ -60,11 +60,11 @@
 	{
 		"ControlName"			"ImagePanel"
 		"fieldName"				"meter_25"
-		"xpos"					"139"
+		"xpos"					"140"
 		"ypos"					"25"
 		"zpos"					"4"
 		"wide"					"1"
-		"tall"					"4"
+		"tall"					"1"
 		"autoResize"			"0"
 		"pinCorner"				"0"
 		"visible"				"1"		
@@ -77,22 +77,22 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ItemEffectMeterLabel"
-		"font"			"HudFontSmallest"
-		"xpos"			"27"
-		"ypos"			"35"
+		"font"			"HudFontTiny"
+		"xpos"			"77"
+		"ypos"			"23"
 		"zpos"			"6"
 		"wide"			"41"
 		"tall"			"15"
 		"autoResize"	"1"
 		"pinCorner"		"2"
-		"visible"		"0"
+		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"5"
 		"labelText"		"#TF_Ball"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"1"
-		"fgcolor" 			"0 0 0 255"
+		"fgcolor_override" 			"white"
 	}
 
 	"ItemEffectMeter"
@@ -105,7 +105,7 @@
 		"xpos"			"10"		
 		"ypos"			"25"	
 		"wide"			"175"
-		"tall"			"4"			
+		"tall"			"1"			
 
 	}
 }

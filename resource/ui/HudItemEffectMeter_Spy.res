@@ -5,10 +5,8 @@
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"c-50"	[$WIN32]
-		"ypos"			"r180"	[$WIN32]
-		"xpos"			"r194"	[$X360]
-		"ypos"			"r74"	[$X360]
+		"xpos"			"c113"
+		"ypos"			"r145"
 		"wide"			"100"
 		"tall"			"50"
 		"MeterFG"		"White"
@@ -39,8 +37,8 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterLabel"
-		"xpos"					"33"
-		"ypos"					"3"
+		"xpos"					"32"
+		"ypos"					"0"
 		"zpos"					"2"
 		"wide"					"41"
 		"tall"					"15"
@@ -54,6 +52,28 @@
 		"dulltext"				"0"
 		"brighttext"			"0"
 		"font"					"HudFontSmallerest"
+		"fgcolor_override"		"white"
+	}
+	"ItemEffectMeterLabelShadow"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ItemEffectMeterLabelShadow"
+		"xpos"					"33"
+		"ypos"					"1"
+		"zpos"					"2"
+		"wide"					"41"
+		"tall"					"15"
+		"autoResize"			"1"
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"CRITS"
+		"textAlignment"			"center"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"HudFontSmallerest"
+		"fgcolor_override"		"black"
 	}
 
 	"ItemEffectMeter"
@@ -94,7 +114,8 @@
 		"textAlignment"			"north"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"HudFontMediumSmall"
+		"font"					"HudFontSmall"
+		"fgcolor_override"		"white"
 	}
 	"ItemEffectMeterCountShadow"
 	{
@@ -113,7 +134,7 @@
 		"textAlignment"			"north"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"HudFontMediumSmall"
+		"font"					"HudFontSmall"
 		"fgcolor"				"black"
 	}
 }

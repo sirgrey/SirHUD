@@ -45,8 +45,8 @@
 		"textAlignment"	"west"
 		"dulltext"		"0"
 		"brighttext"	"1"
-		"fgcolor"		"MedicNoCharged"
-		"fgcolor_override"	"MedicNoCharged"
+		"fgcolor"		"White"
+		"fgcolor_override"	"White"
 	}
 	"ChargeLabelShadow"
 	{
@@ -60,8 +60,8 @@
 		"tall"			"40"
 		"autoResize"	"1"
 		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"5"
 		"labelText"		"#TF_UberchargeMinHUD"
 		"textAlignment"	"west"
@@ -111,7 +111,100 @@
 		"brighttext"	"1"
 		"bgcolor_override"	"15 15 15 130"
 		"fgcolor_override"	"MedicNoCharged"
-	}		
+	}	
+
+	"ResistIcon"
+	{
+		"ControlName" 	"ImagePanel"
+		"fieldName" 	"ResistIcon"
+		"xpos" 			"0"
+		"ypos"			"0"
+		"wide" 			"28"
+		"tall" 			"28"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"image" 		"../HUD/defense_buff_bullet_blue"	
+	}	
+	"ChargeMeter1"
+	{
+		"ControlName" 		"ContinuousProgressBar"
+		"fieldName" 		"ChargeMeter1"
+		"font" 				"Default"
+		"xpos" 				"c112"
+		"ypos" 				"c55"
+		"zpos"				"3"
+		"wide" 				"86"
+		"tall" 				"9"
+		"autoResize" 		"0"
+		"pinCorner" 		"0"
+		"visible" 			"1"
+		"enabled" 			"1"
+		"textAlignment" 	"Left"
+		"dulltext" 			"0"
+		"brighttext" 		"0"
+		"fgcolor_override"		"Uber Bar Color"
+	
+	}
+	
+		"ChargeMeter2"
+	{
+		"ControlName" 		"ContinuousProgressBar"
+		"fieldName" 		"ChargeMeter2"
+		"font" 				"Default"
+		"xpos" 				"c112"
+		"ypos" 				"c66"
+		"zpos"				"3"
+		"wide" 				"86"
+		"tall" 				"10"
+		"autoResize" 		"0"
+		"pinCorner" 		"0"
+		"visible" 			"1"
+		"enabled" 			"1"
+		"textAlignment" 	"Left"
+		"dulltext" 			"0"
+		"brighttext" 		"0"
+		"fgcolor_override"		"Uber Bar Color"
+	}
+
+	"ChargeMeter3"
+	{
+		"ControlName" 		"ContinuousProgressBar"
+		"fieldName" 		"ChargeMeter3"
+		"font" 				"Default"
+		"xpos" 				"c112"
+		"ypos" 				"c78"
+		"zpos" 				"3"
+		"wide" 				"86"
+		"tall" 				"10"
+		"autoResize" 		"0"
+		"pinCorner"			"0"
+		"visible" 			"1"
+		"enabled"			"1"
+		"textAlignment" 	"Left"
+		"dulltext" 			"0"
+		"brighttext" 		"0"
+		"fgcolor_override"		"Uber Bar Color"
+	}
+
+	"ChargeMeter4"
+	{
+		"ControlName" 	"ContinuousProgressBar"
+		"fieldName" 	"ChargeMeter4"
+		"font" 			"Default"
+		"xpos"			"c112"
+		"ypos" 			"c90"
+		"zpos" 			"3"
+		"wide" 			"86"
+		"tall" 			"9"
+		"autoResize" 	"0"
+		"pinCorner" 	"0"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"textAlignment" "Left"
+		"dulltext" 		"0"
+		"brighttext" 	"0"
+		"fgcolor_override"		"Uber Bar Color"
+	}
 	
 	"HealthClusterIcon"
 	{

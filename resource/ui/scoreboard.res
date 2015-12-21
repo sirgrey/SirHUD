@@ -13,17 +13,18 @@
 		"visible"			"1"
 		"enabled"			"1"
 		"tabPosition"		"0"
-		"medal_width"		"14"
-		"avatar_width"		"50"	
-		"name_width"		"80"
-		"name_width_minmode""60"
+		"avatar_width"		"54"
+		"medal_width"		"14"		
+		"name_width"		"0"
+		"name_width_short"	"65"
+		"spacer"			"5"
 		"status_width"		"15"	
 		"nemesis_width"		"15"	
-		"class_width"		"15"	
-		"score_width"		"24"
-		"ping_width"		"24"
-		"stats_width"		"30"
-		"killstreak_width"	"20"
+		"class_width"		"20"	
+		"score_width"		"20"
+		"ping_width"		"20"	
+		"killstreak_width"	"15"
+		"killstreak_image_width" "15"
 	}
 	
 	"BlueScoreBG"
@@ -186,8 +187,8 @@
 		"labelText"		"%blueteamscore%"
 		"textAlignment"		"east"
 		"xpos"			"c-111"
-		"ypos"			"84"
-		"ypos_minmode"	"105"
+		"ypos"			"82"
+		"ypos_minmode"	"103"
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
@@ -211,8 +212,8 @@
 		"labelText"		"%blueteamscore%"
 		"textAlignment"		"east"
 		"xpos"			"c-109"
-		"ypos"			"86" 
-		"ypos_minmode"	"107"
+		"ypos"			"84" 
+		"ypos_minmode"	"105"
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
@@ -282,8 +283,8 @@
 		"labelText"		"%redteamscore%"
 		"textAlignment"		"west"
 		"xpos"			"c11"
-		"ypos"			"84"
-		"ypos_minmode"	"105"
+		"ypos"			"82"
+		"ypos_minmode"	"103"
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
@@ -309,8 +310,8 @@
 		"labelText"		"%redteamscore%"
 		"textAlignment"		"west"
 		"xpos"			"c13"
-		"ypos"			"86"
-		"ypos_minmode"	"107"
+		"ypos"			"84"
+		"ypos_minmode"	"105"
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
@@ -1028,6 +1029,30 @@
 				"visible"		"1"
 				"fgcolor"		"White"
 			}	
+		}
+		"Kills2"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Kills"
+			"font"			"HudFontBiggerBold"
+			"labelText"		"%kills%"
+			"textAlignment"		"east"
+			"xpos"			"-22"
+			"ypos"			"13"
+			"zpos"			"3"
+			"wide"			"70"
+			"tall"			"55"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
 		}						
 		"Deaths"
 		{
@@ -1046,6 +1071,30 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
+		}
+		"Deaths2"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Deaths"
+			"font"			"HudFontBiggerBold"
+			"labelText"		"%deaths%"
+			"textAlignment"		"west"
+			"xpos"			"67"
+			"ypos"			"13"
+			"zpos"			"3"
+			"wide"			"70"
+			"tall"			"55"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"red"
 			
 			if_mvm
 			{
@@ -1100,8 +1149,56 @@
 				"visible"		"1"
 				"fgcolor"		"White"
 			}	
+		}
+		"Assists2"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Assists"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%assists%"
+			"textAlignment"		"west"
+			"xpos"			"171"
+			"ypos"			"10"	[$WIN32]
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
 		}						
 		"Destruction"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Destruction"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%destruction%"
+			"textAlignment"		"west"
+			"xpos"			"171"
+			"ypos"			"20"	[$WIN32]
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
+		}
+		"Destruction2"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Destruction"
@@ -1196,7 +1293,7 @@
 				"visible"		"1"
 				"fgcolor"		"White"
 			}	
-		}						
+		}					
 		"RevengeLabel"
 		{
 			"ControlName"		"CExLabel"
@@ -1220,8 +1317,32 @@
 				"visible"		"1"
 				"fgcolor"		"White"
 			}	
-		}						
+		}					
 		"Captures"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Captures"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%captures%"
+			"textAlignment"		"west"
+			"xpos"			"171"	
+			"ypos"			"40"	
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
+		}	
+		"Captures2"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Captures"
@@ -1268,6 +1389,30 @@
 				"visible"		"1"
 				"fgcolor"		"White"
 			}	
+		}	
+		"Defenses2"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Defenses"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%defenses%"
+			"textAlignment"		"west"
+			"xpos"			"171"	[$WIN32]
+			"ypos"			"50"	[$WIN32]
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
 		}						
 		"Domination"
 		{
@@ -1292,7 +1437,55 @@
 				"visible"		"1"
 				"fgcolor"		"White"
 			}	
+		}
+		"Domination"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Domination"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%dominations%"
+			"textAlignment"		"west"
+			"xpos"			"271"	
+			"ypos"			"10"	
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
 		}						
+		"Revenge"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Revenge"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%Revenge%"
+			"textAlignment"		"west"
+			"xpos"			"271"	
+			"ypos"			"20"	
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
+		}
 		"Revenge"
 		{
 			"ControlName"		"CExLabel"
@@ -1436,8 +1629,56 @@
 				"visible"		"1"
 				"fgcolor"		"White"
 			}	
+		}
+		"Healing2"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"Healing"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%healing%"
+			"textAlignment"		"west"
+			"xpos"			"271"	
+			"ypos"			"40"	
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
 		}						
 		"Invuln"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Invuln"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%invulns%"
+			"textAlignment"		"west"
+			"xpos"			"271"	
+			"ypos"			"50"	
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
+		}	
+		"Invuln2"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Invuln"
@@ -1484,8 +1725,56 @@
 				"visible"		"1"
 				"fgcolor"		"White"
 			}	
+		}
+		"Teleports2"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Teleports"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%teleports%"
+			"textAlignment"		"west"
+			"xpos"			"371"	[$WIN32]
+			"ypos"			"10"	[$WIN32]
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
 		}						
 		"Headshots"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Headshots"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%headshots%"
+			"textAlignment"		"west"
+			"xpos"			"371"	
+			"ypos"			"20"	
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
+		}
+		"Headshots2"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Headshots"
@@ -1534,6 +1823,30 @@
 			}	
 		}
 		"Backstabs"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Backstabs"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%backstabs%"
+			"textAlignment"		"west"	
+			"xpos"			"371"
+			"ypos"			"40"
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
+		}
+		"Backstabs2"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Backstabs"
@@ -1605,6 +1918,30 @@
 				"fgcolor"		"White"
 			}	
 		}
+		"Bonus2"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Bonus"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%bonus%"
+			"textAlignment"		"west"		[$WIN32]
+			"xpos"			"371"
+			"ypos"			"50"
+			"zpos"			"3"
+			"wide"			"95"
+			"tall"			"20"
+			"autoResize"		"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"		"White"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
+		}
 		
 		"SupportLabel"
 		{
@@ -1652,6 +1989,29 @@
 				"fgcolor"		"White"
 			}	
 		}
+		"Support2"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"Support"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%support%"
+			"textAlignment"	"west"		[$WIN32]
+			"xpos"			"471"	[$WIN32]
+			"ypos"			"10"	[$WIN32]
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
+		}
 		"DamageLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -1676,6 +2036,29 @@
 			}	
 		}
 		"Damage"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"Damage"
+			"font"			"HudFontSmallerest"
+			"labelText"		"%damage%"
+			"textAlignment"	"west"		[$WIN32]
+			"xpos"			"471"	[$WIN32]
+			"ypos"			"20"	[$WIN32]
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			
+			if_mvm
+			{
+				"visible"		"1"
+				"fgcolor"		"White"
+			}	
+		}
+		"Damage2"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"Damage"

@@ -69,7 +69,7 @@
 		"labeltext"			"%Health%"
 		"textAlignment"		"center"
 		"font"				"HudFontSmallBold"
-		"fgcolor"			"Hudoffwhite"
-		"fgcolor_override"	"Hudoffwhite"
+		"fgcolor"			"white"
+		"fgcolor_override"	"white"
 	}								
 }

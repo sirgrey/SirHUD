@@ -16,9 +16,9 @@
 		"tabPosition"		"0"
 		"settitlebarvisible"	"0"
 		"PaintBackgroundType"	"0"
-		"bgcolor_override"	"dipDarkBG"
-		"infocus_bgcolor_override" "dipDarkBG"
-		"outoffocus_bgcolor_override" "dipDarkBG"
+		"bgcolor_override"	"25 25 25 255"
+		"infocus_bgcolor_override" "25 25 25 255"
+		"outoffocus_bgcolor_override" "25 25 25 255"
 		
 		"modelpanels_spacing"		"40"
 		"modelpanels_width"			"500"
@@ -27,8 +27,8 @@
 		
 		"modelpanelskv"	
 		{
-			"PaintBackgroundType"	"2"
-			"paintborder"			"1"
+			"PaintBackgroundType"	"0"
+			"paintborder"			"0"
 			"bgcolor_override"		"0 0 0 0"
 			
 			"model_xpos"	"-125"
@@ -39,12 +39,32 @@
 			"text_xpos"		"250"
 			"text_wide"		"225"
 			"text_center"	"1"
+			"BackColor"
+			{
+    		"ControlName"		"EditablePanel"
+    		"fieldName"			"BackColor"
+    		"xpos"				"0"
+    		"ypos"				"0"
+    		"zpos"				"-1"
+    		"wide"				"f0"
+    		"tall"	 			"f0"
+    		"visible"			"1"
+    		"enabled"			"1"
+			"pinCorner"			"0"
+			"autoResize"		"0"
+			"PaintBackgroundType""1"
+			"border"			"NoBorder"
+			"bgcolor_override"	"35 35 35 255"
+			
+			}
 			
 			"itemmodelpanel"
 			{
 				"use_item_rendertarget" "0"
 				"inventory_image_type" "1"
 			}
+		
+
 		}
 	}
 	
@@ -82,8 +102,8 @@
 		"fieldName"		"ItemsFoundLabel"
 		"font"			"HudFontMediumBigBold"
 		"labelText"		"#NewItemsAcquired"
-		"fgcolor_override" "HUDOffWhite"
 		"textAlignment"	"center"
+		"fgcolor"		"TanLight"
 		"xpos"			"0"
 		"ypos"			"20"
 		"zpos"			"1"
@@ -100,7 +120,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"SelectedItemFoundMethodLabel"
 		"font"			"HudFontMediumSmallBold"
-		"fgcolor_override" "HUDOffWhite"
+		"fgcolor"		"TanLight"
 		"labelText"		""
 		"textAlignment"	"center"
 		"xpos"			"0"
@@ -120,7 +140,6 @@
 		"fieldName"		"ItemCountLabel"
 		"font"			"HudFontSmallestBold"
 		"labelText"		"#Item"
-		"fgcolor_override" "HUDOffWhite"
 		"textAlignment"	"north-west"
 		"xpos"			"c-245"
 		"ypos"			"115"
@@ -137,7 +156,6 @@
 		"ControlName"		"CExLabel"
 		"fieldName"		"SelectedItemNumberLabel"
 		"font"			"HudFontMediumBigBold"
-		"fgcolor_override" "HUDOffWhite"
 		"labelText"		"#SelectedItemNumber"
 		"textAlignment"	"north-west"
 		"xpos"			"c-245"
@@ -165,28 +183,28 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"labelText"		"#NextItem"
-		"font"			"HudFontSmallestBold"
+		"labelText"		"&D"
+		"font"			"CerbeticaBold16"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"Command"		"nextitem"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
-		
-		    "border_default"	"FuckinBorderDude"
-			"border_armed"		"FuckinBorderDude"
-			
-			"defaultFgColor_override" "HUDOffWhite"
-			"armedFgColor_override" "dipDarkBG"
-			"depressedFgColor_override" "dipDarkBG"
-			"defaultBgColor_override" "dipDarkBG"
-			"armedBgColor_override" "dipBlue"
-			"depressedBgColor_override" "dipBlue"
+		"paintbackground"	"1"
+		"defaultBgColor_override"	"15 15 15 255k"
+		"armedBgColor_override"		"25 25 25 255"
+		"depressedBgColor_override"	"25 25 25 255"
+		"defaultFgColor_override"	"TanLight"
+		"armedFgColor_override" 	"TanLight"
+		"depressedFgColor_override" "TanLight"
+		"border_default"			"ButtonHover"
+		"border_armed"				"ButtonHover"
+
 	}
 	"PrevButton"
 	{
-		"ControlName"		"CExButton"
+		"ControlName"	"CExButton"
 		"fieldName"		"PrevButton"
 		"xpos"			"c-265"
 		"ypos"			"350"
@@ -198,24 +216,23 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"labelText"		"#PreviousItem"
-		"font"			"HudFontSmallestBold"
+		"labelText"		"&A"
+		"font"			"CerbeticaBold16"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"Command"		"previtem"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
-		
-		    "border_default"	"FuckinBorderDude"
-			"border_armed"		"FuckinBorderDude"
-			
-			"defaultFgColor_override" "HUDOffWhite"
-			"armedFgColor_override" "dipDarkBG"
-			"depressedFgColor_override" "dipDarkBG"
-			"defaultBgColor_override" "dipDarkBG"
-			"armedBgColor_override" "dipBlue"
-			"depressedBgColor_override" "dipBlue"
+		"paintbackground"	"1"
+		"defaultBgColor_override"	"15 15 15 255k"
+		"armedBgColor_override"		"25 25 25 255"
+		"depressedBgColor_override"	"25 25 25 255"
+		"defaultFgColor_override"	"TanLight"
+		"armedFgColor_override" 	"TanLight"
+		"depressedFgColor_override" "TanLight"
+		"border_default"			"ButtonHover"
+		"border_armed"				"ButtonHover"
 	}
 	
 	"CloseButton"
@@ -241,16 +258,15 @@
 		"default"		"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
-		
-		 "border_default"	"FuckinBorderDude"
-			"border_armed"		"FuckinBorderDude"
-			
-			"defaultFgColor_override" "HUDOffWhite"
-			"armedFgColor_override" "dipDarkBG"
-			"depressedFgColor_override" "dipDarkBG"
-			"defaultBgColor_override" "dipDarkBG"
-			"armedBgColor_override" "dipBlue"
-			"depressedBgColor_override" "dipBlue"
+		"paintbackground"	"1"
+		"defaultBgColor_override"	"15 15 15 255"
+		"armedBgColor_override"		"25 25 25 255"
+		"depressedBgColor_override"	"25 25 25 255"
+		"defaultFgColor_override"	"TanLight"
+		"armedFgColor_override" 	"TanLight"
+		"depressedFgColor_override" "TanLight"
+		"border_default"			"ButtonHover"
+		"border_armed"				"ButtonHover"
 	}
 	"OpenLoadoutButton"
 	{
@@ -274,16 +290,15 @@
 		"Command"		"changeloadout"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
-		
-		 "border_default"	"FuckinBorderDude"
-			"border_armed"		"FuckinBorderDude"
-			
-			"defaultFgColor_override" "HUDOffWhite"
-			"armedFgColor_override" "dipDarkBG"
-			"depressedFgColor_override" "dipDarkBG"
-			"defaultBgColor_override" "dipDarkBG"
-			"armedBgColor_override" "dipBlue"
-			"depressedBgColor_override" "dipBlue"
+		"paintbackground"	"1"
+		"defaultBgColor_override"	"15 15 15 255"
+		"armedBgColor_override"		"25 25 25 255"
+		"depressedBgColor_override"	"25 25 25 255"
+		"defaultFgColor_override"	"TanLight"
+		"armedFgColor_override" 	"TanLight"
+		"depressedFgColor_override" "TanLight"
+		"border_default"			"ButtonHover"
+		"border_armed"				"ButtonHover"
 	}
 	
 	"DiscardButton"
@@ -343,7 +358,7 @@
 		"tall"			"50"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
+		"border"		"NoBorder"
 		
 		"TipLabel"
 		{
@@ -381,8 +396,8 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "dipBlue"
-		"bgcolor_override"	"dipDarkBGer"
+		"fgcolor_override" "200 80 60 255"
+		"bgcolor_override"	"46 43 42 255"
 	}
 	
 	"ScoreEntry"

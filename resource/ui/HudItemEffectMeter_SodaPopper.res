@@ -6,7 +6,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"c-87"	[$WIN32]
-		"ypos"			"c78"	[$WIN32]
+		"ypos"			"c61"	[$WIN32]
 		"wide"			"175"
 		"tall"			"20"
 		"MeterFG"		"White"
@@ -30,8 +30,8 @@
 		"fieldName"		"ItemEffectMeterLabel"
 		"font"			"HudFontTiny"
 		"xpos"			"66"
-		"ypos"			"6"
-		"zpos"			"6"
+		"ypos"			"9"
+		"zpos"			"12"
 		"wide"			"41"
 		"tall"			"15"
 		"autoResize"	"1"
@@ -44,7 +44,7 @@
 		"dulltext"		"1"
 		"brighttext"	"1"
 		"fgcolor" 	"Black"
-		"fgcolor_override"	"TanDark"
+		"fgcolor_override"	"White"
 	}
 
 	"ItemEffectMeter"
@@ -57,7 +57,7 @@
 		"xpos"			"0"		
 		"ypos"			"11"	
 		"wide"			"175"
-		"tall"			"4"	
+		"tall"			"1"	
 		"textAlignment"			"center"		
 
 	}	

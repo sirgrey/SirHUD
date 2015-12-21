@@ -6,7 +6,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"c-87"	[$WIN32]
-		"ypos"			"c72"	[$WIN32]
+		"ypos"			"c85"	[$WIN32]
 		"wide"			"175"
 		"tall"			"50"
 		"MeterFG"		"White"
@@ -30,7 +30,7 @@
 		"fieldName"		"ItemEffectMeterLabel"
 		"font"			"HudFontTiny"
 		"xpos"			"66"
-		"ypos"			"6"
+		"ypos"			"8"
 		"zpos"			"6"
 		"wide"			"41"
 		"tall"			"15"
@@ -44,7 +44,7 @@
 		"dulltext"		"1"
 		"brighttext"	"1"
 		"fgcolor" 	"Black"
-		"fgcolor_override"	"TanDark"
+		"fgcolor_override"	"White"
 	}
 	"ItemEffectMeter"
 	{		
@@ -54,9 +54,9 @@
 		"enabled"		"1"
 		"zpos"			"2"			
 		"xpos"			"0"		
-		"ypos"			"11"	
+		"ypos"			"10"	
 		"wide"			"175"
-		"tall"			"4"	
+		"tall"			"1"	
 		"textAlignment"			"center"	
 
 	"ChargeMark_Cola"

@@ -15,44 +15,24 @@
 		"PaintBackgroundType"	"0"
 	}
 
-	xHairSpread
+	xHair
 	{
 		"controlName" "CExLabel"
-		"fieldName" "xHairSpread"
+		"fieldName" "xHair"
 		"visible" "0"		//Disabled by default. Change this value to 1 to enable the crosshair.
 		"enabled" "0"
 		"zpos" "2"
 		
-		"xpos" "c-102"		//If your crosshair is not centred, play with "xpos" and "ypos".
+		"xpos" "c-100"		//If your crosshair is not centred, play with "xpos" and "ypos".
 		"ypos" "c-104"		//The c-100 means that it is 100 to the left of center. You shouldn't need adjustments of more than 10, so be a little stingy with your tweaks!
-		"wide" "199"		//Larger is to the right
-		"tall" "207"		//Larger is down
+		"wide" "200"		//Larger is to the right
+		"tall" "205"		//Larger is down
 		
-		"font" "xHairSpread12"
-		"labelText" "3"			//Change this to the number/letter of the desired crosshair found in the customization/crosshairs image file.
+		"font" "xHairSpread20"
+		"labelText" "y"			//Change this to the number/letter of the desired crosshair found in the customization/crosshairs image file.
 		"textAlignment" "center"
 		
-		"fgcolor" "255 255 255 192"
-	}
-
-	xHairSpreadOutline
-	{
-		"controlName" "CExLabel"
-		"fieldName" "xHairSpread"
-		"visible" "0"		//Disabled by default. Change this value to 1 to enable the crosshair.
-		"enabled" "0"
-		"zpos" "2"
-		
-		"xpos" "c-102"		//If your crosshair is not centred, play with "xpos" and "ypos".
-		"ypos" "c-104"		//The c-100 means that it is 100 to the left of center. You shouldn't need adjustments of more than 10, so be a little stingy with your tweaks!
-		"wide" "201"		//Larger is to the right
-		"tall" "208"		//Larger is down
-		
-		"font" "xHairSpread12Outline"
-		"labelText" "3"			//Change this to the number/letter of the desired crosshair found in the customization/crosshairs image file.
-		"textAlignment" "center"
-		
-		"fgcolor" "255 255 255 192"
+		"fgcolor" "0 255 0 255"
 	}
 	
 	HudPlayerStatus
@@ -139,9 +119,9 @@
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 		"xpos"			"c-87"	[$WIN32]
-		"ypos"			"r157"	[$WIN32]
+		"ypos"			"r168"	[$WIN32]
 		"wide"			"800"
-		"tall"			"6"
+		"tall"			"30"
 	}	
 
 	HudBowCharge
@@ -245,8 +225,8 @@
 		"PaintBackgroundType"	"2"
 
 		"wide"		"200"
-		"xpos"		"c-305"
-		"ypos"		"r162"
+		"xpos"		"c-280"
+		"ypos"		"r192"
 	}
 	
 	CDamageAccountPanel
@@ -1320,5 +1300,72 @@
 		"wide"			"320"
 		"tall"			"150"
 	}
-	
+	"ItemAttributeTracker"
+	{
+		"fieldName" 	"ItemAttributeTracker"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"f5"
+		"tall"			"f0"
+		"PaintBackgroundType"	"0"
+	}
+
+	HudMiniGame
+	{
+		"fieldName" "HudMiniGame"
+		"visible" "1"
+		"enabled" "1"
+		"xpos"	"0"
+		"ypos"	"0"
+		"wide"	"f0"
+		"tall"	"480"
+	}
+
+	"QuestNotificationPanel"
+	{
+		"fieldName"	"QuestNotificationPanel"
+		"visible" "1"
+		"enabled" "1"
+		"xpos"	"0"
+		"ypos"	"0"
+		"wide"	"f0"
+		"tall"	"f0"
+	}
+
+	"QuestLogContainer"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName" 		"QuestLogContainer"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"	 		"f0"
+		"tall"	 		"f0"
+	}
+
+	"MatchMakingContainer"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName" 		"MatchMakingContainer"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"	 		"f0"
+		"tall"	 		"f0"
+	}
+
+	HudSpectatorExtras
+	{
+		"fieldName" "HudSpectatorExtras"
+		"visible" "1"
+		"enabled" "1"
+		"xpos"	"0"
+		"ypos"	"0"
+		"wide"	"f0"
+		"tall"	"f0"
+	}
 }

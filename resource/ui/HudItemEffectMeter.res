@@ -5,8 +5,8 @@
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"c-87"	[$WIN32]
-		"ypos"			"c66"	[$WIN32]
+		"xpos"			"c-87"	[$WIN32] //
+		"ypos"			"c78"	[$WIN32] // "c66" / c78
 		"wide"			"175"
 		"tall"			"20"
 		"MeterFG"		"White"
@@ -33,7 +33,7 @@
 		"ypos"			"6"
 		"zpos"			"6"
 		"wide"			"41"
-		"tall"			"15"
+		"tall"			"10"
 		"autoResize"	"1"
 		"pinCorner"		"2"
 		"visible"		"1"
@@ -44,7 +44,7 @@
 		"dulltext"		"1"
 		"brighttext"	"1"
 		"fgcolor" 	"Black"
-		"fgcolor_override"	"TanDark"
+		"fgcolor_override"	"White"
 	}
 
 	"ItemEffectMeter"
@@ -55,9 +55,9 @@
 		"enabled"		"1"
 		"zpos"			"2"			
 		"xpos"			"0"		
-		"ypos"			"11"	
+		"ypos"			"6"	
 		"wide"			"175"
-		"tall"			"4"	
+		"tall"			"1"	
 		"textAlignment"			"center"		
 
 	}	
